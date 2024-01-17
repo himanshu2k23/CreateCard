@@ -11,13 +11,19 @@ export default function Name({ GroomsName, BridesName, Font, FontColor, FontSize
     <div className='flex flex-col justify-between w-[300px] h-[800px] py-10'>
       <div className='flex flex-col space-y-10 ' >
         <div className='mt-10'>
-          <label for="countries" className="block mb-1 text-sm font-medium text-gray-900">Font</label>
-          <select id="countries" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 ">
-            <option selected>Choose a font</option>
-            <option value="US">United States</option>
-            <option value="CA">Canada</option>
-            <option value="FR">France</option>
-            <option value="DE">Germany</option>
+          <label for="countries" className="block mb-1 text-md font-medium text-gray-900">Font</label>
+          <select id="countries" onChange={(e)=>setFont(e.target.value)} className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 ">
+            <option style={{ fontFamily: Font }} selected>Choose a font</option>
+            <option style={{ fontFamily: "Serif" }} value="Serif">Serif</option>
+            <option style={{ fontFamily: "San-serif" }} value="San-serif">San-serif</option>
+            <option style={{ fontFamily: "Monospace" }} value="Monospace">Monospace</option>
+
+
+
+            <option style={{ fontFamily: "Cursive" }} value="Cursive">Cursive</option>
+            <option style={{ fontFamily: "Fangsong" }} value="Fangsong">Fangsong</option>
+            <option style={{ fontFamily: "Fantasy" }} value="Fantasy">Fantasy</option>
+            {/* <option style={{ fontFamily: "Math" }} value="Math">Math</option> */}
           </select>
         </div>
         <div className='flex flex-row '>

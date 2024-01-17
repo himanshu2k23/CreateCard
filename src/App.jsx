@@ -9,7 +9,7 @@ import Name from './assets/Name'
 function App() {
   const [BridesName, setBridesName] = useState("Bride's Name")
   const [GroomsName, setGroomsName] = useState("Groom's Name")
-  const [Font, setFont] = useState("")
+  const [Font, setFont] = useState("system-ui")
   const [FontSize, setFontSize] = useState(20)
   const [FontColor, setFontColor] = useState("#000000")
 
